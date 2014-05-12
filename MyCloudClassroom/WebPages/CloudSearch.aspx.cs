@@ -13,5 +13,11 @@ namespace MyCloudClassroom.WebPages
         {
 
         }
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {   
+            base.Context.Response.Redirect("https://co​nsole.aws.​amazon.com​/cloudsear​ch/home?&r​egion=us-w​est-2#sear​ch,filesea​rch");
+            base.Context.Response.End();
+        }
     }
 }

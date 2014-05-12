@@ -184,6 +184,10 @@
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Images\389344.jpg" />
+    <Content Include="Images\5130183.jpg" />
+    <Content Include="Images\blog tagxedo.jpg" />
+    <Content Include="Images\campus-cloud-computing.jpg" />
+    <Content Include="Images\myfile.jpg" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />

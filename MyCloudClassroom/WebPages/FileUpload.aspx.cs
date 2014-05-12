@@ -52,7 +52,7 @@ namespace MyCloudClassroom.WebPages
                 {
                     string topicarn = Course.fetchTopicARN(courseid);
                     AWSClass.publishToTopic(topicarn, "New File Uploaded on Classroom",
-                        "Hi User!<p>A new document '" + txtResourceName.Text + "' has been uploaded for the course " + course.courseName + ". Please visit the website to download the document.<p>Thanks!<p>Your Classroom");
+                        "Hi! A new document '" + txtResourceName.Text + "' has been uploaded for the course " + course.courseName + ". Please visit the MyCloudClassroom to download the document.Thanks!");
                 }
                 lblSuccess.Text = "File uploaded successfully.";
                 lblSuccess.Visible = true;

@@ -15,7 +15,7 @@
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
-<body>
+<body background="/Images/389344.jpg">
     <div id="wrapper">
         
     <form runat="server">
@@ -84,7 +84,6 @@
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
         </div>
-        
             <div id="footer">
             <hr />
             <footer>

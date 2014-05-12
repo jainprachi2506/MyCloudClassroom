@@ -70,7 +70,7 @@ namespace MyCloudClassroom.Classes
                                 ",@uploadedat,@courseid,@resourcefile)";
 
                 int sqlRet = db.executeDDL(sqlCommand, param);
-                
+
                 return sqlRet;
             }
 
@@ -154,6 +154,12 @@ namespace MyCloudClassroom.Classes
             {
                 rsid = (int)dr["resourceid"];
             }
+
+            db = new dbManager();
+            sqlCommand = "INSERT INTO mccdb.resourcefeedback(resourceid) values (@resourceid)";
+            param = new MySqlParameter[1];
+            param[0] = new MySqlParameter("@resourceid", rsid);
+            db.executeDDL(sqlCommand, param);
 
             return rsid;
         }

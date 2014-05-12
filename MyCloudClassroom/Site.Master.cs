@@ -55,15 +55,18 @@ namespace MyCloudClassroom
                 // Set Anti-XSRF token
                 ViewState[AntiXsrfTokenKey] = Page.ViewStateUserKey;
                 ViewState[AntiXsrfUserNameKey] = Context.User.Identity.Name ?? String.Empty;
-                if(Context.User.Identity.IsAuthenticated==true)
-                { 
-                MyUser user1 = MyUser.getUser(Context.User.Identity.Name, "");
-                if (user1!=null && (Session["UserId"] == null || Convert.ToInt32(Session["UserId"].ToString()) != user1.userId))
-                    Session.Add("UserId", user1.userId);
+                if (Context.User.Identity.IsAuthenticated == true)
+                {
+                    MyUser user1 = MyUser.getUser(Context.User.Identity.Name, "");
+                    if (user1 != null && (Session["UserId"] == null || Convert.ToInt32(Session["UserId"].ToString()) != user1.userId))
+                        Session.Add("UserId", user1.userId);
                 }
+                else
+                { Session.Clear(); }
             }
             else
             {
+                
                 // Validate the Anti-XSRF token
                 if ((string)ViewState[AntiXsrfTokenKey] != _antiXsrfTokenValue
                     || (string)ViewState[AntiXsrfUserNameKey] != (Context.User.Identity.Name ?? String.Empty))
