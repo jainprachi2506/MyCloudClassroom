@@ -1,0 +1,13 @@
+methodology
+oo principles
+scrum assessment
+diagrams: class and sequence
+up
+videos
+diff btwn oo and crc
+crc purpose
+ans : 2 kinds of responsibilities: method : info access
+sequence diagrams -2 types: black box
+collaboration diag
+essential use case 
+answers in diagrams with 1 line xplaintn in finals
